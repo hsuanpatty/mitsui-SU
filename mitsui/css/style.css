@@ -686,7 +686,7 @@ p {
 
 
 @media (min-width: 1200px) {
-  .mitsu-group { gap: 1rem; }
+  .mitsu-group { gap: 2.5rem 1rem; }
 }
 
 @media (max-width: 1499.98px) {
