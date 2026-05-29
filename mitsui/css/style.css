@@ -529,7 +529,7 @@ p {
 
 /* --- 核心修正：內容區塊 --- */
 .card-content {
-  padding: 1.5rem 1.2rem;
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -559,7 +559,6 @@ p {
 
 .card-content p {
   font: 16px GenKiMin-R;
-  margin-top: 0.7rem;
   color: var(--grey);
   line-height: 1.6rem;
   overflow: hidden;
@@ -569,6 +568,29 @@ p {
   height: 3rem; 
   margin-bottom: 10px;
 }
+
+.card-content p.gift-red {
+  color: #ff2f2f;
+  font-weight: 600;
+  margin-top: 0.7rem;
+  letter-spacing: 0.02rem;
+  height: 1.6rem;
+  margin-bottom: 5px;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  
+}
+
+@media (max-width: 575.98px) {
+  .card-content p.gift-red {
+    height: 3rem;
+    -webkit-line-clamp: 2;
+  }
+}
+
 
 /* 價錢與按鈕 */
 .card-d {
@@ -664,7 +686,7 @@ p {
 
 
 @media (min-width: 1200px) {
-  .mitsu-group { gap: 2rem; }
+  .mitsu-group { gap: 1rem; }
 }
 
 @media (max-width: 1499.98px) {
